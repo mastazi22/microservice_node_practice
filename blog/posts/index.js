@@ -21,6 +21,6 @@ app.post('/posts',(req,res)=>{
     res.status(201).send(postsp[id]);
 });
 
-app.listen(4000,()=>{
+app.listen(8080,()=>{
 console.log('listening on 4000');
 });
