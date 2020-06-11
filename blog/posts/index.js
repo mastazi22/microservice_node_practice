@@ -21,6 +21,6 @@ app.post('/posts',(req,res)=>{
     res.status(201).send(posts[id]);
 });
 
-app.listen(5000,()=>{
+app.listen(8080,'18.221.121.202',()=>{
 console.log('listening on 5000');
 });
