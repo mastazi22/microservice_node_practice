@@ -1,5 +1,5 @@
 const express=require('express');
-const {radnomBytes}=require('crypto');
+const {randomBytes}=require('crypto');
 const bodyParser=require('body-parser');
 
 const app=express();
@@ -13,7 +13,7 @@ app.get('/posts',(req,res)=>
 });
 
 app.post('/posts',(req,res)=>{
-    const id=radnomBytes(4).toString('hex');
+    const id=randomBytes(4).toString('hex');
     const{title}=req.body();
     posts[id]={
         id,title
